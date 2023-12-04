@@ -1,7 +1,12 @@
 # Split Keyboard
-Split keyboard design and fabrication
 
-BoM
+## Design and Fabrication
+- Modified layout from ErgoDox on [KLE](http://www.keyboard-layout-editor.com/#/)
+- Switch-plate template generated on [SwillKB](http://builder.swillkb.com/)
+- CAD done on OnShape
+- Printed on a modified Ender3Pro using a 0.6mm nozzle in PLA
+
+## Bill of Materials
 - 2 x Adafruit [NeoKey 5x6 Ortho Snap-Apart Mechanical Key Switches w/ NeoPixel - For MX Compatible Switches](https://www.adafruit.com/product/5157)
 - 60 x MX socket compatible switches : Using [Gateron KS-9 RGB](https://a.co/d/2FaNAoF) for LEDs
 - 50 x 1u keycaps compatible to switch stems : [Pudding Style XDA](https://a.co/d/bYV5bW5) for LEDs
