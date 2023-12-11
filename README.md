@@ -1,4 +1,4 @@
-# Split Keyboard
+# Conkeeb - Split Keyboard
 
 ## Design and Fabrication
 - Modified layout from ErgoDox on [KLE](http://www.keyboard-layout-editor.com/#/)
@@ -16,7 +16,7 @@
 - 2 x [RPi-Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) for each of the halves - there are some spare GPIO pins - could add more hardware like an encoder or use a smaller one by sacrificing the joystick or display unit
 
 Fasteners per KB half
-- 6 x M3 socket-heads + heat-set inserts to attach the case to switch plate
-- 4 x M2 socket-heads + heat-set inserts to attach display unit, Picos
-- 1 x M3 socket-head + hex nut for swivel peg arm
-- 2 x 6mm x 4mm magnets for swivel peg arm
+- 4-6 x M3 6mm(H)x5mm(OD) heat-set inserts and 6mm socket-heads for the case and switch plate - holes dimensioned to allow for socket heads to sink into the base
+- 2 x M3 4mm (H)x5mm(OD) heat-set inserts and 4mm socket-heads for the USB-A breakout board
+- 2 x M2 4mm(H)x3.5mm(OD) heat-set inserts and 6mm screws for the Pico
+- 4 x M2 4mm socket-heads and nuts for the display unit - these screw heads are visible - pick whatever you think looks the best
