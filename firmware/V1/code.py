@@ -4,44 +4,45 @@ from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
 from kmk.scanners import DiodeOrientation
 
-from kb import data_pin
+# from kb import data_pin
+from kmk.modules.layers import Layers
 from kmk.modules.split import Split, SplitSide
 from storage import getmount
 
 from kmk.modules.layes import Layers
 keyboard.modules.append(Layers())
 
-keyboard = KMKKeyboard()
+# keyboard = KMKKeyboard()
 
-side = SplitSide.RIGHT if str(getmount('/').label)[-1] == 'R' else SplitSide.LEFT
+# side = SplitSide.RIGHT if str(getmount('/').label)[-1] == 'R' else SplitSide.LEFT
 
-split = Split(split_side=SplitSide.LEFT)
-keyboard.modules.append(split)
+# split = Split(split_side=SplitSide.LEFT)
+# keyboard.modules.append(split)
 
-split = Split( # NAME DRIVES AS CIRCUITPYL and CIRCUITPYR respectively
-    split_flip=True,  # If both halves are the same, but flipped, set this True - check wiring
-    split_type=SplitType.UART,  # Defaults to UART
-    split_target_left=True,  # Assumes that left will be the one on USB. Set to False if it will be the right
-    uart_interval=20,  # Sets the uarts delay. Lower numbers draw more power
-    data_pin=board.GP1,  # The primary data pin to talk to the secondary device with
-    data_pin2=board.GP0,  # Second uart pin to allow 2 way communication
-    uart_flip=True,  # Reverses the RX and TX pins if both are provided
-    use_pio=False,  # Use RP2040 PIO implementation of UART. Required if you want to use other pins than RX/TX
-)
+# split = Split( # NAME DRIVES AS CIRCUITPYL and CIRCUITPYR respectively
+#     split_flip=True,  # If both halves are the same, but flipped, set this True - check wiring
+#     split_type=SplitType.UART,  # Defaults to UART
+#     split_target_left=True,  # Assumes that left will be the one on USB. Set to False if it will be the right
+#     uart_interval=20,  # Sets the uarts delay. Lower numbers draw more power
+#     data_pin=board.GP1,  # The primary data pin to talk to the secondary device with
+#     data_pin2=board.GP0,  # Second uart pin to allow 2 way communication
+#     uart_flip=True,  # Reverses the RX and TX pins if both are provided
+#     use_pio=False,  # Use RP2040 PIO implementation of UART. Required if you want to use other pins than RX/TX
+# )
 
 
-side = SplitSide.RIGHT if str(getmount('/').label)[-1] == 'R' else SplitSide.LEFT
+# side = SplitSide.RIGHT if str(getmount('/').label)[-1] == 'R' else SplitSide.LEFT
 
-if side == SplitSide.RIGHT:
-    keyboard.col_pins = (board.GP2, board.GP3, board.GP4, board.GP5, board.GP6, board.GP7)
-    keyboard.row_pins = (board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
-    # keyboard.data_pin = 
-    # keyboard.diode_orientation = ...
-else:
-    keyboard.col_pins = (board.GP7, board.GP6, board.GP5, board.GP4, board.GP3, board.GP2)
-    keyboard.row_pins = (board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
+# if side == SplitSide.RIGHT:
+#     keyboard.col_pins = (board.GP2, board.GP3, board.GP4, board.GP5, board.GP6, board.GP7)
+#     keyboard.row_pins = (board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
+#     # keyboard.data_pin = 
+#     # keyboard.diode_orientation = ...
+# else:
+#     keyboard.col_pins = (board.GP7, board.GP6, board.GP5, board.GP4, board.GP3, board.GP2)
+#     keyboard.row_pins = (board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
 
-keyboard.diode_orientation = DiodeOrientation.ROW2COL
+# keyboard.diode_orientation = DiodeOrientation.ROW2COL
 
 # keyboard.col_pins = (board.GP7, board.GP6, board.GP5, board.GP4, board.GP3, board.GP2)
 # keyboard.row_pins = (board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
