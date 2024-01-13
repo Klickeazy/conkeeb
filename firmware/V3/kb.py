@@ -24,6 +24,13 @@ class KMKKeyboard(_KMKKeyboard):
     data_pin_TX = board.GP0
     data_pin_RX = board.GP1
     
+    SLC = board.GP19
+    SDA = board.GP18
+    
+    js_x = board.GP26
+    js_y = board.GP25
+    js_switch = board.GP22
+    
     coord_mapping = [
         0,  1,  2,  3,  4,  5,      30, 31, 32, 33, 34, 35,
         6,  7,  8,  9,  10, 11,     36, 37, 38, 39, 40, 41,

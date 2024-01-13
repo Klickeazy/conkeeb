@@ -1,5 +1,7 @@
 # Conkeeb - Split Keyboard
 
+![current keyboard](resources\current_hardware.jpg)
+
 ## Design and Fabrication
 - Modified layout from ErgoDox on [KLE](http://www.keyboard-layout-editor.com/#/)
 - Switch-plate template generated on [SwillKB](http://builder.swillkb.com/)
